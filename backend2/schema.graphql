@@ -1,0 +1,16 @@
+type Mirav1mainnet_SwapEvent {
+  id: ID! 
+  time: Int!
+  block_height: Int!
+  transaction_id: ID!
+  pool_id: ID!
+  recipient: String!
+  asset_0_in: BigInt!
+  asset_1_in: BigInt!
+  asset_0_out: BigInt!
+  asset_1_out: BigInt!
+  exchange_rate:BigInt!
+  is_buy: Boolean!
+  is_sell: Boolean!
+}
+

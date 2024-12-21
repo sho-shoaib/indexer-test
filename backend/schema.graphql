@@ -1,0 +1,88 @@
+type Mirav1core_TotalSupplyEvent {
+  id: ID!
+}
+
+type Mirav1core_AccessError {
+  id: ID!
+}
+
+type Mirav1core_SetSymbolEvent {
+  id: ID!
+}
+
+type Mirav1core_SetDecimalsEvent {
+  id: ID!
+}
+
+type Mirav1core_MintEvent {
+  id: ID!
+}
+
+type Mirav1core_OwnershipTransferred {
+  id: ID!
+}
+
+type Mirav1core_BurnEvent {
+  id: ID!
+}
+
+type Mirav1core_AmmError {
+  id: ID!
+}
+
+type Mirav1core_CreatePoolEvent {
+  id: ID!
+}
+
+type Mirav1core_SwapEvent {
+  id: ID! 
+  time: Int!
+  block_height: Int!
+  transaction_id: ID!
+  pool_id: ID!
+  recipient: String!
+  asset_0_in: BigInt!
+  asset_1_in: BigInt!
+  asset_0_out: BigInt!
+  asset_1_out: BigInt!
+  exchange_rate:BigInt!
+  is_buy: Boolean!
+  is_sell: Boolean!
+}
+
+type Mirav1core_InitializationError {
+  id: ID!
+}
+
+type Mirav1core_SetNameEvent {
+  id: ID!
+}
+
+type Mirav1core_ReentrancyError {
+  id: ID!
+}
+
+type Mirav1core_InputError {
+  id: ID!
+}
+
+type Mirav1core_OwnershipSet {
+  id: ID!
+}
+
+type Mirav1core_Transfer {
+  id: ID!
+}
+
+type Mirav1core_Mint {
+  id: ID!
+}
+
+type Mirav1core_Burn {
+  id: ID!
+}
+
+type Mirav1core_Call {
+  id: ID!
+}
+

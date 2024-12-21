@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
+name: backend
+ecosystem: fuel
+networks:
+- id: 0
+  start_block: 0
+  contracts:
+  - name: mirav1core
+    address:
+    - 0x2e40f2b244b98ed6b8204b3de0156c6961f98525c8162f80162fcf53eebd90e7
+    abi_file_path: abis/mirav1core-abi.json
+    handler: src/EventHandlers.ts
+    events:
+    - name: TotalSupplyEvent
+    - name: AccessError
+    - name: SetSymbolEvent
+    - name: SetDecimalsEvent
+    - name: MintEvent
+    - name: OwnershipTransferred
+    - name: BurnEvent
+    - name: AmmError
+    - name: CreatePoolEvent
+    - name: SwapEvent
+    - name: InitializationError
+    - name: SetNameEvent
+    - name: ReentrancyError
+    - name: InputError
+    - name: OwnershipSet
+    - name: Transfer
+    - name: Mint
+    - name: Burn
+    - name: Call

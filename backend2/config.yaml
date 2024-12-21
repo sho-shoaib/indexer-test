@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
+name: backend2
+ecosystem: fuel
+networks:
+- id: 0
+  start_block: 0
+  hyperfuel_config:
+   url: https://mainnet2.hypersync.xyz`
+  contracts:
+  - name: mirav1mainnet
+    address:
+    - 0x2e40f2b244b98ed6b8204b3de0156c6961f98525c8162f80162fcf53eebd90e7
+    abi_file_path: abis/mirav1mainnet-abi.json
+    handler: src/EventHandlers.ts
+    events:
+    - name: SwapEvent
+      logId: '7938487056892321597'
